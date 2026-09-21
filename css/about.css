@@ -1,0 +1,163 @@
+/* =====================================================
+   ABOUT PAGE
+===================================================== */
+
+body {
+    background: #f7f8fa;
+}
+
+
+/* HERO */
+
+.about-hero {
+    min-height: 560px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: url("../images/ella.jpg") center / cover no-repeat;
+}
+
+
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient( 90deg, rgba( 8, 24, 45, 0.90 ), rgba( 8, 24, 45, 0.50 ) );
+}
+
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+    padding-top: 70px;
+    color: white;
+}
+
+
+    .about-hero-content > span {
+        color: #f28b3c;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 1.7px;
+    }
+
+
+.about-hero h1 {
+    max-width: 720px;
+    font-size: clamp( 45px, 6vw, 70px );
+    line-height: 1.06;
+    margin: 15px 0;
+}
+
+
+    .about-hero h1 strong {
+        display: block;
+        color: #f28b3c;
+    }
+
+
+.about-hero p {
+    max-width: 560px;
+    color: rgba( 255, 255, 255, 0.76 );
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* CONTENT */
+
+.about-section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 85px 5%;
+}
+
+
+.section-label {
+    color: #db6f24;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+}
+
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 17px;
+}
+
+
+    .about-grid > div:first-child {
+        grid-row: span 2;
+        padding: 25px;
+    }
+
+
+    .about-grid h2 {
+        font-size: 38px;
+        margin: 9px 0 15px;
+    }
+
+
+    .about-grid p {
+        color: #737c89;
+        font-size: 12px;
+        line-height: 1.8;
+        margin-bottom: 12px;
+    }
+
+
+.about-card {
+    background: white;
+    border: 1px solid #e3e7ed;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+
+    .about-card > div {
+        width: 45px;
+        height: 45px;
+        display: grid;
+        place-items: center;
+        border-radius: 11px;
+        background: #fff0e5;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+
+    .about-card h3 {
+        font-size: 17px;
+        margin-bottom: 7px;
+    }
+
+
+    .about-card p {
+        min-height: 42px;
+        margin: 0;
+    }
+
+
+@media (max-width: 800px) {
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+        .about-grid > div:first-child {
+            grid-row: auto;
+        }
+}
+
+/* =========================================================
+   GLOBETREK - COMPACT ABOUT HERO OVERRIDE
+========================================================= */
+.about-hero {
+    min-height: 330px !important;
+    margin-top: 76px !important;
+}

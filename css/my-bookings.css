@@ -1,0 +1,362 @@
+
+.bookings-hero {
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: url("../images/galle.jpg") center / cover no-repeat;
+}
+
+.bookings-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(7,22,44,.92), rgba(7,22,44,.55), rgba(7,22,44,.18));
+}
+
+.bookings-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+    padding-top: 60px;
+}
+
+.bookings-hero-content span {
+    color: #f28b3c;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.bookings-hero-content h1 {
+    margin: 10px 0 12px;
+    font-size: clamp(40px, 6vw, 64px);
+}
+
+.bookings-hero-content p {
+    max-width: 600px;
+    color: rgba(255,255,255,.75);
+    line-height: 1.7;
+}
+
+.bookings-page {
+    padding: 65px 5% 85px;
+    background: #f7f8fa;
+}
+
+.bookings-wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.booking-tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 25px;
+    margin-bottom: 28px;
+}
+
+.booking-tools > div span {
+    color: #db6f24;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+}
+
+.booking-tools h2 {
+    margin: 7px 0 0;
+    color: #172033;
+    font-size: 34px;
+}
+
+.new-booking-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 45px;
+    padding: 0 18px;
+    border-radius: 9px;
+    background: #f28b3c;
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.new-booking-button:hover {
+    background: #db6f24;
+}
+
+.booking-search {
+    min-width: 230px;
+    height: 45px;
+    border: 1px solid #e3e7ed;
+    border-radius: 9px;
+    background: white;
+    padding: 0 14px;
+    outline: none;
+}
+
+.booking-search:focus {
+    border-color: #f28b3c;
+}
+
+.booking-list {
+    display: grid;
+    gap: 18px;
+}
+
+.booking-card-item {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    background: white;
+    border: 1px solid #e3e7ed;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(20,35,60,.05);
+}
+
+.booking-card-image {
+    min-height: 235px;
+}
+
+.booking-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.booking-card-content {
+    padding: 24px;
+}
+
+.booking-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.booking-id {
+    color: #89929e;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.booking-top h3 {
+    margin: 8px 0 7px;
+    color: #172033;
+    font-size: 24px;
+}
+
+.booking-top p {
+    margin: 0;
+    color: #737c89;
+    font-size: 12px;
+}
+
+.status-badge {
+    align-self: start;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 800;
+    background: #fff3df;
+    color: #c37800;
+}
+
+.status-badge.paid {
+    background: #eaf8ef;
+    color: #20834a;
+}
+
+.status-badge.cancelled {
+    background: #ffeaea;
+    color: #c23b3b;
+}
+
+.booking-info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.booking-info-grid > div {
+    padding: 13px;
+    border-radius: 11px;
+    background: #f8fafc;
+}
+
+.booking-info-grid small,
+.booking-card-footer,
+.booking-info-grid strong {
+    display: block;
+}
+
+.booking-info-grid small {
+    color: #8c95a0;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.booking-info-grid strong {
+    color: #172033;
+    font-size: 13px;
+}
+
+.booking-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 17px;
+    border-top: 1px solid #e7ebef;
+}
+
+.payment-state {
+    color: #7a8490;
+    font-size: 11px;
+}
+
+.payment-state strong {
+    color: #172033;
+}
+
+.booking-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.pay-small-button,
+.details-small-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 38px;
+    padding: 0 13px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.pay-small-button {
+    background: #102a5c;
+    color: white;
+}
+
+.details-small-button {
+    border: 1px solid #e3e7ed;
+    color: #172033;
+    background: white;
+}
+
+.pay-small-button:hover {
+    background: #f28b3c;
+}
+
+.details-small-button:hover {
+    border-color: #f28b3c;
+    color: #db6f24;
+}
+
+.empty-bookings {
+    padding: 70px 25px;
+    text-align: center;
+    background: white;
+    border: 1px solid #e3e7ed;
+    border-radius: 18px;
+}
+
+.empty-bookings-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 18px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #fff3e8;
+    color: #f28b3c;
+    font-size: 28px;
+}
+
+.empty-bookings h3 {
+    color: #172033;
+    font-size: 24px;
+}
+
+.empty-bookings p {
+    max-width: 540px;
+    margin: 8px auto 24px;
+    color: #737c89;
+    line-height: 1.7;
+    font-size: 13px;
+}
+
+@media (max-width: 800px) {
+    .booking-tools {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .booking-search {
+        width: 100%;
+    }
+
+    .booking-card-item {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-card-image {
+        min-height: 220px;
+    }
+
+    .booking-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .bookings-page {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .booking-tools h2 {
+        font-size: 28px;
+    }
+
+    .booking-top {
+        flex-direction: column;
+    }
+
+    .booking-card-content {
+        padding: 19px;
+    }
+
+    .booking-card-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .booking-actions {
+        width: 100%;
+    }
+
+    .pay-small-button,
+    .details-small-button {
+        flex: 1;
+    }
+}
+
+/* =========================================================
+   GLOBETREK - COMPACT MY BOOKINGS HERO OVERRIDE
+========================================================= */
+.bookings-hero {
+    min-height: 300px !important;
+    margin-top: 76px !important;
+}

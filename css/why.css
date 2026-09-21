@@ -1,0 +1,159 @@
+/* =====================================================
+   WHY PAGE
+===================================================== */
+
+body {
+    background: #f7f8fa;
+}
+
+
+.why-hero {
+    min-height: 560px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: url("../images/sigiriya.jpg") center / cover no-repeat;
+}
+
+
+.why-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient( 90deg, rgba( 7, 22, 44, 0.90 ), rgba( 7, 22, 44, 0.48 ) );
+}
+
+
+.why-content {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+    padding-top: 65px;
+    color: white;
+}
+
+
+    .why-content span {
+        color: #f28b3c;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 1.7px;
+    }
+
+
+    .why-content h1 {
+        font-size: clamp( 45px, 6vw, 70px );
+        line-height: 1.05;
+        margin: 14px 0;
+    }
+
+
+        .why-content h1 strong {
+            display: block;
+            color: #f28b3c;
+        }
+
+
+    .why-content p {
+        max-width: 560px;
+        color: rgba( 255, 255, 255, 0.75 );
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+
+.why-section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 85px 5%;
+}
+
+
+.why-heading {
+    margin-bottom: 30px;
+}
+
+
+    .why-heading span {
+        color: #db6f24;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+    }
+
+
+    .why-heading h2 {
+        font-size: 38px;
+        margin-top: 8px;
+    }
+
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr );
+    gap: 16px;
+}
+
+
+.why-card {
+    background: white;
+    border: 1px solid #e3e7ed;
+    border-radius: 15px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+
+    .why-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba( 20, 35, 60, 0.08 );
+    }
+
+
+    .why-card > div {
+        width: 46px;
+        height: 46px;
+        display: grid;
+        place-items: center;
+        border-radius: 11px;
+        background: #fff0e5;
+        margin-bottom: 15px;
+    }
+
+
+    .why-card h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+
+    .why-card p {
+        color: #737c89;
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+
+@media (max-width: 850px) {
+
+    .why-grid {
+        grid-template-columns: repeat( 2, 1fr );
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================================
+   GLOBETREK - COMPACT WHY HERO OVERRIDE
+========================================================= */
+.why-hero {
+    min-height: 330px !important;
+    margin-top: 76px !important;
+}

@@ -1,0 +1,720 @@
+/* =========================================================
+   GLOBETREK BOOKING PAGE
+   Premium Deep Navy Travel Design
+========================================================= */
+
+/* =========================================================
+   BOOKING HERO
+========================================================= */
+
+.booking-hero {
+
+    position: relative;
+    min-height: 300px;
+    margin-top: 76px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    background:
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85")
+        center 58% / cover no-repeat;
+}
+
+.booking-hero::before {
+
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4, 16, 31, 0.95),
+            rgba(5, 22, 40, 0.72),
+            rgba(5, 22, 40, 0.30)
+        );
+}
+
+.booking-hero-overlay {
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 76% 45%,
+            rgba(243,154,61,0.13),
+            transparent 33%
+        );
+}
+
+.booking-hero-content {
+
+    position: relative;
+    z-index: 3;
+    width: 92%;
+    max-width: 1180px;
+    margin: auto;
+    padding: 38px 0 35px;
+}
+
+.booking-breadcrumb {
+
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 17px;
+    color: rgba(255,255,255,0.68);
+    font-size: 11px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.booking-breadcrumb:hover {
+    color: #ffffff;
+}
+
+.booking-breadcrumb i {
+    color: #f39a3d;
+}
+
+.booking-hero-label {
+
+    display: block;
+    margin-bottom: 8px;
+    color: #f39a3d;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.booking-hero h1 {
+
+    margin: 0 0 9px;
+    color: #ffffff;
+    font-size: clamp(35px, 5vw, 54px);
+    line-height: 1.06;
+    letter-spacing: -1.5px;
+}
+
+.booking-hero-content p {
+
+    max-width: 600px;
+    margin: 0;
+    color: rgba(255,255,255,0.76);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.booking-page {
+    padding: 38px 4% 75px;
+    background: #f3f6f9;
+}
+
+.booking-container {
+
+    width: 92%;
+    max-width: 1180px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+    gap: 22px;
+    align-items: start;
+}
+
+/* =========================================================
+   TRIP CARD
+========================================================= */
+
+.trip-card {
+
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e0e6ed;
+    border-radius: 18px;
+    box-shadow: 0 14px 40px rgba(4,18,35,0.06);
+}
+
+/* Uses external travel image; no package image */
+.trip-visual {
+
+    position: relative;
+    min-height: 265px;
+    display: flex;
+    align-items: flex-end;
+
+    background:
+        url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1500&q=85")
+        center / cover no-repeat;
+}
+
+.trip-visual-overlay {
+
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(4,17,32,0.95), rgba(4,17,32,0.16));
+}
+
+.trip-visual-content {
+
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 28px;
+}
+
+.trip-visual-content > span {
+
+    display: block;
+    margin-bottom: 8px;
+    color: #f39a3d;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.trip-visual-content h2 {
+
+    max-width: 520px;
+    margin: 0 0 9px;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1.15;
+}
+
+.trip-location {
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: rgba(255,255,255,0.75);
+    font-size: 11px;
+}
+
+.trip-location i {
+    color: #f39a3d;
+}
+
+/* =========================================================
+   TRIP CONTENT
+========================================================= */
+
+.trip-content {
+    padding: 27px;
+}
+
+.trip-heading {
+    margin-bottom: 13px;
+}
+
+.trip-heading > span {
+
+    display: block;
+    margin-bottom: 6px;
+    color: #d87825;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.7px;
+}
+
+.trip-heading h2 {
+
+    margin: 0;
+    color: #09203b;
+    font-size: 23px;
+}
+
+.trip-description {
+
+    margin: 0 0 20px;
+    color: #728094;
+    font-size: 11px;
+    line-height: 1.75;
+}
+
+/* =========================================================
+   INFO GRID
+========================================================= */
+
+.trip-info-grid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.trip-info {
+
+    min-height: 66px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #f7f9fb;
+    border: 1px solid #e4e9ef;
+}
+
+.trip-info-icon {
+
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background: #eaf0f5;
+    color: #092b4d;
+    font-size: 12px;
+}
+
+.trip-info small {
+
+    display: block;
+    margin-bottom: 4px;
+    color: #8a95a3;
+    font-size: 8px;
+}
+
+.trip-info strong {
+
+    display: block;
+    color: #203650;
+    font-size: 10px;
+    line-height: 1.35;
+}
+
+/* =========================================================
+   HELP
+========================================================= */
+
+.trip-help {
+
+    margin-top: 17px;
+    padding: 13px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    background: #eef4f8;
+    border: 1px solid #dce6ed;
+}
+
+.trip-help-icon {
+
+    width: 31px;
+    height: 31px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #dfeaf2;
+    color: #092b4d;
+    font-size: 11px;
+}
+
+.trip-help strong {
+
+    display: block;
+    margin-bottom: 3px;
+    color: #233a54;
+    font-size: 10px;
+}
+
+.trip-help p {
+
+    margin: 0;
+    color: #7a8796;
+    font-size: 9px;
+    line-height: 1.55;
+}
+
+/* =========================================================
+   FORM CARD
+========================================================= */
+
+.booking-form-card {
+
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e0e6ed;
+    border-radius: 18px;
+    box-shadow: 0 14px 40px rgba(4,18,35,0.06);
+}
+
+.booking-form-heading {
+    margin-bottom: 21px;
+}
+
+.booking-form-heading > span {
+
+    display: block;
+    margin-bottom: 6px;
+    color: #d87825;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.7px;
+}
+
+.booking-form-heading h2 {
+
+    margin: 0 0 6px;
+    color: #09203b;
+    font-size: 25px;
+}
+
+.booking-form-heading p {
+
+    margin: 0;
+    color: #7b8796;
+    font-size: 10px;
+}
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.booking-message {
+
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin-bottom: 17px;
+    padding: 11px 12px;
+    border-radius: 9px;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.booking-message.error {
+
+    background: #fff0ee;
+    border: 1px solid #ffd1cc;
+    color: #ae342d;
+}
+
+.booking-message.success {
+
+    background: #eaf8ef;
+    border: 1px solid #c9ead5;
+    color: #1f7847;
+}
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.booking-form-group {
+    margin-bottom: 17px;
+}
+
+.booking-form-group > label {
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 7px;
+}
+
+.label-title {
+
+    color: #273b51;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.label-hint {
+    color: #9aa4b0;
+    font-size: 8px;
+}
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.booking-input-wrapper {
+
+    height: 48px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fbfcfd;
+    border: 1px solid #dce3eb;
+    border-radius: 9px;
+    transition: 0.2s ease;
+}
+
+.booking-input-wrapper:focus-within {
+
+    background: white;
+    border-color: #0a294a;
+    box-shadow: 0 0 0 3px rgba(10,41,74,0.07);
+}
+
+.booking-input-icon {
+
+    width: 20px;
+    color: #8390a0;
+    font-size: 12px;
+}
+
+.booking-input-wrapper input {
+
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #152b43;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.input-unit {
+
+    flex-shrink: 0;
+    color: #9ca6b1;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+}
+
+/* =========================================================
+   SUMMARY
+========================================================= */
+
+.booking-summary {
+
+    margin-top: 21px;
+    padding: 17px;
+    border-radius: 12px;
+    background: #f6f8fa;
+    border: 1px solid #e1e7ed;
+}
+
+.summary-header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.summary-header span {
+
+    display: block;
+    margin-bottom: 4px;
+    color: #d87825;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.summary-header strong {
+
+    display: block;
+    color: #18314f;
+    font-size: 13px;
+}
+
+.summary-header > i {
+    color: #092b4d;
+    font-size: 15px;
+}
+
+.summary-line {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 9px;
+}
+
+.summary-line span {
+    color: #7b8796;
+    font-size: 9px;
+}
+
+.summary-line strong {
+
+    max-width: 60%;
+    overflow: hidden;
+    text-align: right;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #273d55;
+    font-size: 9px;
+}
+
+.summary-total {
+
+    margin-top: 14px;
+    padding-top: 13px;
+    border-top: 1px solid #dce3e9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.summary-total span {
+
+    color: #17304a;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.summary-total strong {
+
+    color: #092b4d;
+    font-size: 18px;
+}
+
+.summary-note {
+
+    display: block;
+    margin-top: 9px;
+    color: #98a2ad;
+    font-size: 8px;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   SUBMIT
+========================================================= */
+
+.booking-submit {
+
+    width: 100%;
+    min-height: 49px;
+    margin-top: 17px;
+    padding: 0 16px;
+    border: none;
+    border-radius: 9px;
+    background: #092b4d;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 700;
+    transition: 0.25s ease;
+}
+
+.booking-submit:hover {
+
+    background: #f39a3d;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(9,43,77,0.16);
+}
+
+.booking-submit:disabled {
+
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* =========================================================
+   SECURITY
+========================================================= */
+
+.form-security {
+
+    margin: 11px 0 0;
+    text-align: center;
+    color: #97a1ad;
+    font-size: 8px;
+}
+
+.form-security i {
+    color: #092b4d;
+    margin-right: 3px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 920px) {
+
+    .booking-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .booking-hero {
+        min-height: 285px;
+        margin-top: 70px;
+    }
+
+    .booking-hero-content {
+        padding: 35px 0 30px;
+    }
+
+    .booking-hero h1 {
+        font-size: 35px;
+    }
+
+    .booking-page {
+        padding: 30px 3.5% 60px;
+    }
+
+    .booking-container {
+        width: 100%;
+    }
+
+    .trip-content,
+    .booking-form-card {
+        padding: 21px;
+    }
+
+    .trip-visual {
+        min-height: 245px;
+    }
+
+    .trip-visual-content h2 {
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .trip-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-form-group > label {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .summary-total {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .summary-total strong {
+        font-size: 19px;
+    }
+
+}
