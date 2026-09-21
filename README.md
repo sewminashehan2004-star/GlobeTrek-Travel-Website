@@ -535,6 +535,10 @@ Also make sure the website is opened using:
 
 ```text
 http://localhost/globetrak/
+```
+
+and not through a local `file:///` path.
+
 ---
 
 ## 👨‍💻 Author
