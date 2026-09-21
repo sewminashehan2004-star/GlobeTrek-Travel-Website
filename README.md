@@ -535,40 +535,6 @@ Also make sure the website is opened using:
 
 ```text
 http://localhost/globetrak/
-```
-
-and not through a local `file:///` path.
-
----
-
-## 🔒 Security Notes
-
-Do not publish or share:
-
-- Database passwords
-- API keys
-- Private credentials
-- Secret configuration values
-
-For a production environment, authentication and password storage should be implemented using stronger security practices.
-
----
-
-## 🚀 Future Improvements
-
-Possible future improvements include:
-
-- Secure password hashing
-- Online payment gateway integration
-- Email booking confirmations
-- Advanced package search and filtering
-- Customer reviews and ratings
-- Google Maps integration
-- Improved mobile responsiveness
-- Travel package recommendations
-- Stronger role-based authorization
-- Cloud deployment
-
 ---
 
 ## 👨‍💻 Author
